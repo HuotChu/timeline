@@ -1,0 +1,24 @@
+{
+  "name": "@timeline/timeline",
+  "version": "1.0.0",
+  "description": "Timeline component created with Storybook.js",
+  "files": [
+    "README.MD"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Storybook",
+    "timeline"
+  ],
+  "author": "Scott Bishop <sb167u@att.com>",
+  "license": "UNLICENSED",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HuotChu/timeline.git"
+  },
+  "dependencies": {
+  }
+}
