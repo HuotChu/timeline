@@ -7,10 +7,7 @@ export default {
   }
 };
 
-const Template = ({ date, ...args }) => {
-
-  return createDateEle({ date, ...args });
-};
+const Template = ({ date, ...args }) => createDateEle({ date, ...args });
 
 export const Primary = Template.bind({});
 Primary.args = {
