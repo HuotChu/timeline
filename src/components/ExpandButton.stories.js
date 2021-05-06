@@ -1,9 +1,9 @@
 import { createButton } from './ExpandButton';
 
 export default {
-  title: 'Example/Button',
+  title: 'Example/ExpandButton',
   argTypes: {
-    elementId: { id: 'id' },
+    elementId: 'id',
     onClick: { action: 'onClick' }
   },
 };
