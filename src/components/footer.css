@@ -3,6 +3,7 @@
   font-size: 12px;
   font-family: 'Simply Cricket Demi', Arial, sans-serif;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .timeline-footer:after {
