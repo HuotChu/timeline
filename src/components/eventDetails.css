@@ -13,7 +13,7 @@
 
 .storybook-event-details p{
   padding-top: 5px;
-  font-weight: normal;
+  font-weight: normal !important;
 }
 
 .storybook-event-details a{
