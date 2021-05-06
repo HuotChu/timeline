@@ -128,7 +128,7 @@ const timeLineData = {
                "href" : "https://www.cricketwireless.com/support/using-my-phone",
                "text" : "Set up your device >"
                },{
-               "href" : "https://www.cricketwireless.com/cell-phon-accessories",
+               "href" : "https://www.cricketwireless.com/cell-phone-accessories",
                "text" : "Get accessories for your device >"
             }]
          },
