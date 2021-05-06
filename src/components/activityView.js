@@ -6,9 +6,8 @@ import { createButton } from './ExpandButton';
 import { createText } from './Text';
 
 export const createActivityView = ({ activityData, index = 0 }) => {
-    /** Pseudo Code */
     const { events } = getTimeLineData();
-    activityData = events[0];
+    activityData = events[0] || {};
     const dateComponent = createDateEle(activityData.date);
     const title = createText(activityData.applicationId, true);
     const subtitle = createText(activityData.shortDescription, false);
@@ -19,7 +18,7 @@ export const createActivityView = ({ activityData, index = 0 }) => {
     const container = document.createElement('div');
     container.className = 'activity-container';
 
-    //let iconType = ''; ==> switch on data to set class name
+    let iconType = ''; //==> switch on data to set class name
 
     const view = `<div class='section-top'>
         <span class='activity-icon ${iconType}'></span>
@@ -33,7 +32,7 @@ export const createActivityView = ({ activityData, index = 0 }) => {
     </div>`;
 
     container.insertAdjacentHTML('afterbegin', view);
-    constainer.addEventListener('expandBtnClicked', (e) => {
+    container.addEventListener('expandBtnClicked', (e) => {
         const { id, state } = e.detail;
         if (id === buttonId) {
             const classes = document.querySelector(`#${buttonId}`).classList;

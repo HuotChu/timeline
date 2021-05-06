@@ -282,13 +282,13 @@ let timeLineData = {
 };
 
 export const getTimeLineData = () => {
-   timeLineData = timeLineData.account;
-   const data = {
-      accountInfo: Object.assign(timeLineData.accountDetails, timeLineData.name),
-      events: []
-   };
    if (timeLineData) {
+      timeLineData = timeLineData.account || {};
       const accountDetails = timeLineData.accountDetails || {};
+      const data = {
+         accountInfo: Object.assign(accountDetails, timeLineData.name || {}),
+         events: []
+      };      
       const accountEvents = timeLineData.events || [];
       const accountRecommendations = (timeLineData.recommendations || {}).actions || [];
 
@@ -305,10 +305,10 @@ export const getTimeLineData = () => {
             }]
          });
       }
-      accountEvents.forEach((event) => {
+      accountEvents.forEach(event => {
          data.events.push(event);
       });
-      accountRecommendations.forEach((recommendation) => {
+      accountRecommendations.forEach(recommendation => {
          if (recommendation.priority === 1) {
             data.events.push({
                "type": "recommendation",
@@ -318,6 +318,6 @@ export const getTimeLineData = () => {
             });
          }
       });
+      return data;
    }
-   return data;
 };
