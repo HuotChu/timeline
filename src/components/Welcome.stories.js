@@ -13,7 +13,7 @@ const Template = ({...args})=> createWelcomeText({...args});
 
 export const WelcomeText = Template.bind({});
 WelcomeText.args = {
-    boldText: "Thanks for being with us since",
+    boldText: "Thanks for being with us since ",
     date: '2021-05-04',
-    normalText: "Here are the most recent activities on your account"
+    normalText: "Here are the most recent activities on your account."
 }

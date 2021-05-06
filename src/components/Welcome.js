@@ -9,7 +9,7 @@ export const createWelcomeText = ({boldText, date, normalText})=>{
     const dateText = createDateEle({date});
 
 
-    boldTe.innerHTML = boldText+" ";
+    boldTe.innerHTML = boldText;
     normalTe.innerHTML = "! "+ normalText;
 
     boldTe.appendChild(dateText);
