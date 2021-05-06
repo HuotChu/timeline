@@ -1,0 +1,12 @@
+.timeline-footer {
+  color: #3170B7;
+  font-size: 12px;
+  font-family: 'Simply Cricket Demi', Arial, sans-serif;
+  font-weight: 100;
+}
+
+.timeline-footer:after {
+  content: '>';
+  padding-left: 2px;
+  font-size: 10px;
+}
