@@ -1,3 +1,4 @@
+//reference data endpoint https://cricketsharedsvcs.it.att.com/restservices/customer360/v2/service/customer360view/954476051
 let timeLineData = {
    "account":{
       "billingAccountNumber":"954476051",
@@ -282,13 +283,14 @@ let timeLineData = {
 };
 
 export const getTimeLineData = () => {
-   if (timeLineData) {
+   if( timeLineData ){
       timeLineData = timeLineData.account || {};
-      const accountDetails = timeLineData.accountDetails || {};
       const data = {
-         accountInfo: Object.assign(accountDetails, timeLineData.name || {}),
+         accountInfo : Object.assign({},timeLineData.accountDetails,timeLineData.name),
          events: []
-      };      
+      };
+
+      const accountDetails = timeLineData.accountDetails || {};
       const accountEvents = timeLineData.events || [];
       const accountRecommendations = (timeLineData.recommendations || {}).actions || [];
 
