@@ -5,11 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-svg {
-  display: inline-block;
-  vertical-align: top;
+  background-color: rgb(64, 64, 65);
 }
 
 h1 {
@@ -19,8 +15,5 @@ h1 {
   margin: 6px 0 6px 10px;
   display: inline-block;
   vertical-align: top;
-}
-
-button + button {
-  margin-left: 10px;
+  color: #fff;
 }
