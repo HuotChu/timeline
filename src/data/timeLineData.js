@@ -1,4 +1,4 @@
-const timeLineData = {
+export const timeLineData = {
    "account":{
       "billingAccountNumber":"954476051",
       "accountDetails":{
@@ -2201,5 +2201,3 @@ const timeLineData = {
       }
    }
 };
-
-export timeLineData;
