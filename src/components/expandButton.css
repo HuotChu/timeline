@@ -1,0 +1,23 @@
+.expand-button {
+  display: inline-block;
+  background: #fff url(./assets/chevron-down-icon.png) center center/contain no-repeat;
+  width: 25px;
+  height: 15px;
+  cursor: pointer;
+  margin-top: 3px;
+}
+.button-toggle-ui {
+  transition: height 200ms;
+  width: auto;
+  background: none;
+  padding: 0;
+  margin: 0 10px 0 0;
+  border: 0;
+  z-index: 50;
+  position: absolute;
+  top: 26px;
+  right: 10px;
+}
+.button-toggle-ui.expanded {
+  transform: rotateX(180deg);
+}
