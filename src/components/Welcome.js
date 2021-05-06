@@ -1,5 +1,5 @@
 import './Welcome.css';
-import {createDateEle} from './date';
+import { createDateEle } from './date';
 
 export const createWelcomeText = ({boldText, date, normalText})=>{
     const container = document.createElement('div');
@@ -8,10 +8,8 @@ export const createWelcomeText = ({boldText, date, normalText})=>{
     const normalTe = document.createElement('p');
     const dateText = createDateEle({date});
 
-
     boldTe.innerHTML = boldText;
-    normalTe.innerHTML = "! "+ normalText;
-
+    normalTe.innerHTML = "! " + normalText;
     boldTe.appendChild(dateText);
     container.appendChild(boldTe);
     container.appendChild(normalTe);

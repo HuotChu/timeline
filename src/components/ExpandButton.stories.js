@@ -3,19 +3,13 @@ import { createButton } from './ExpandButton';
 export default {
   title: 'Example/ExpandButton',
   argTypes: {
-    elementId: 'id',
-    onClick: { action: 'onClick' }
+    elementId: 'id'
   },
 };
 
-const Template = ({ elementId, onClick }) => {
-  // You can either use a function to create DOM elements or use a plain html string!
-  // return `<div>${label}</div>`;
-  return createButton({ elementId, onClick });
-};
+const Template = ({ elementId }) => createButton({ elementId });
 
 export const Primary = Template.bind({});
 Primary.args = {
-  elementId: 'id',
-  onClick: () => { window.alert('Hola');}
+  elementId: 'id'
 };
