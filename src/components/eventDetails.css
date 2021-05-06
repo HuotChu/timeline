@@ -1,0 +1,17 @@
+.storybook-event-details {
+  font-family: 'Nunito Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  border-top: 2px solid #e1dfe1;
+  display: block;
+  line-height: 1;
+  padding: 20px;
+  font-size: 12px;
+}
+
+.storybook-event-details h3{
+  font-weight: bold;
+}
+
+.storybook-event-details p{
+  padding-top: 5px;
+  font-weight: normal;
+}
