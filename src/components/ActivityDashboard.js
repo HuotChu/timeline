@@ -12,22 +12,27 @@ export const createActivityDashboard = ({ headerLabel, footerLabel, data }) => {
   const container = document.createElement('div');
   container.classList.add('storybook-activity-dashboard');
   const header = createHeader({headerText:headerLabel});
+  const content = document.createElement('div');
+  content.classList.add('storybook-activity-dashboard-content');
   const footer = createFooter({footerText:footerLabel, onClick: () => {location.href="/"}} );
   container.appendChild(header);
+  container.appendChild(content);
+  container.appendChild(footer);
+
   if((data.accountInfo||{}).customerSince){
      const welcome = createWelcomeText({
        boldText: "Thanks for being with us since ",
        date: data.accountInfo.customerSince,
        normalText: "Here are the most recent activities on your account."});
-     container.appendChild(welcome);
+     content.appendChild(welcome);
+
   }
   console.log(data);
   if(data.events){
     data.events.forEach((event,idx) => {
       const activityView = createActivityView({ activityData : event, index: idx});
-      container.appendChild(activityView);
+      content.appendChild(activityView);
     });
   }
-  container.appendChild(footer);
   return container;
 };
