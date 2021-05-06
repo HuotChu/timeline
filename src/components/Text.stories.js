@@ -1,7 +1,7 @@
 import {createText} from './Text';
 
 export default {
-    title: 'Main Text',
+    title: 'Example/MainText',
     argTypes: {
       text : {control : 'text'},
       primary : {control : 'boolean'}
