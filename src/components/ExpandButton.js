@@ -1,7 +1,7 @@
 import './expandButton.css';
 
 export const createButton = ({ elementId }) => {
-    const element = document.getElementById(elementId);
+    const btnElement = document.getElementById(elementId);
     const detail = {
         id: elementId,
         state: 'collapsed'
@@ -10,12 +10,14 @@ export const createButton = ({ elementId }) => {
     const span = document.createElement('span');
     btn.addEventListener('click', () => {
         detail.state = detail.state === 'collapsed' ? 'expanded' : 'collapsed';
-        const elementEvent = element.createCustomEvent('expandBtnClicked', { detail });
+        const elementEvent = btnElement ? btnElement.createCustomEvent('expandBtnClicked', { detail }) : null;
         btn.classList.toggle('expanded');
-        btn.dispatchEvent(elementEvent);
+        if( elementEvent ){
+            btn.dispatchEvent(elementEvent);
+        }
     });
-    span.classList.add = 'expand-button';
-    btn.classList.add = 'button-toggle-ui';
+    span.className = ['expand-button'].join(' ');
+    btn.className = ['button-toggle-ui'].join(' ');
     btn.appendChild(span);
     return btn;
 };
