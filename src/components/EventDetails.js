@@ -36,7 +36,7 @@ details
       const link = document.createElement('a');
       link.href = a.href;
       link.innerText = a.text;
-    container.appendChild(link);
+      container.appendChild(link);
     });
 
   //container.style.backgroundColor = backgroundColor;
