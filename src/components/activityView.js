@@ -1,18 +1,20 @@
 import './activityView.css';
+import { getTimeLineData } from '../data/timeLineData';
 import { createDateEle } from './date';
 import { createEventDetails } from './EventDetails';
 import { createButton } from './ExpandButton';
 import { createText } from './Text';
 
-export const createActivityView = ({ activityData, index }) => {
+export const createActivityView = ({ activityData, index = 0 }) => {
     /** Pseudo Code */
-    //const { data vars } = activityData;
-    //const dateComponent = createDateEle(dataVars.date);
-    //const title = createText(dataVars.title, true);
-    //const subtitle = createText(dataVars.subTitle, false);
-    //const buttonId = `expandButton_${index}`;
-    //const expandButton = createButton(buttonId);
-    //const eventDetails = createEventDetails(activityData.details);
+    const { events } = getTimeLineData();
+    activityData = events[0];
+    const dateComponent = createDateEle(activityData.date);
+    const title = createText(activityData.applicationId, true);
+    const subtitle = createText(activityData.shortDescription, false);
+    const buttonId = `expandButton_${index}`;
+    const expandButton = createButton(buttonId);
+    const eventDetails = createEventDetails(activityData);
 
     const container = document.createElement('div');
     container.className = 'activity-container';

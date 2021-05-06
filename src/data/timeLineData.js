@@ -1,4 +1,4 @@
-const timeLineData = {
+let timeLineData = {
    "account":{
       "billingAccountNumber":"954476051",
       "accountDetails":{
@@ -281,17 +281,18 @@ const timeLineData = {
    }
 };
 
-const getTimeLineData = async () => {
+export const getTimeLineData = () => {
+   timeLineData = timeLineData.account;
    const data = {
-      accountInfo : Object.assign(timeLineData.accountDetails,timeLineData.name),
+      accountInfo: Object.assign(timeLineData.accountDetails, timeLineData.name),
       events: []
    };
-   if( timeLineData ){
+   if (timeLineData) {
       const accountDetails = timeLineData.accountDetails || {};
       const accountEvents = timeLineData.events || [];
       const accountRecommendations = (timeLineData.recommendations || {}).actions || [];
 
-      if(accountDetails.customerSince){
+      if (accountDetails.customerSince) {
          data.events.push({
             "type": "transaction",
             "description": "Customer Account Creation",
@@ -304,12 +305,11 @@ const getTimeLineData = async () => {
             }]
          });
       }
-      accountEvents.forEach((event)=>{
+      accountEvents.forEach((event) => {
          data.events.push(event);
       });
-
-      accountRecommendations.forEach((recommendation)=>{
-         if(recommendation.priority === 1){
+      accountRecommendations.forEach((recommendation) => {
+         if (recommendation.priority === 1) {
             data.events.push({
                "type": "recommendation",
                "description": recommendation.actionName,
@@ -318,11 +318,6 @@ const getTimeLineData = async () => {
             });
          }
       });
-
    }
-
-};
-
-export {
-   getTimeLineData
+   return data;
 };
