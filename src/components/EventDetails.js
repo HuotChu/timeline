@@ -5,18 +5,21 @@ details
 }) => {
   if(!details){
     details = {
-      "type":"memo",
-      "seqNo":"2735269226",
-      "description":"Security Authentication has been bypassed with reason makeAPayment",
-      "date":"2021-05-05",
-      "timestamp":"1620220457000",
+      "type":"transaction",
+      "seqNo":"2735193147",
+      "description":"Upgraded Device: (555) 555-5555. You Upgraded your device to iPhone SE. To get the most out of youor device:",
+      "date":"2021-03-05",
+      "timestamp":"1620215662000",
       "attId":"sb181k",
       "applicationId":"Voyage",
+      "shortDescription": "Device Upgrade",
       "performedBy":"sb181k",
-      "shortDescription": "Make a Payment",
-      "links":[{
-        "href" : 'www.cricketwireless.com/cell-phones',
-        "text" : 'Shop Phones'
+      "links": [{
+        "href" : "https://www.cricketwireless.com/support/using-my-phone",
+        "text" : "Set up your device >"
+      },{
+        "href" : "https://www.cricketwireless.com/cell-phon-accessories",
+        "text" : "Get accessories for your device >"
       }]
     }
   }

@@ -15,3 +15,8 @@
   padding-top: 5px;
   font-weight: normal;
 }
+
+.storybook-event-details a{
+  display: block;
+  padding-top: 5px;
+}
