@@ -6,7 +6,7 @@ export const createWelcomeText = ({boldText, date, normalText})=>{
     container.className = 'container';
     const boldTe = document.createElement('p');
     const normalTe = document.createElement('p');
-    const dateText = createDateEle({date});
+    const dateText = createDateEle({date: date});
 
     boldTe.innerHTML = boldText;
     normalTe.innerHTML = "! " + normalText;
