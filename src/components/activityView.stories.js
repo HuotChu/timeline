@@ -1,4 +1,4 @@
-import { createActivityView } from './ActivityView';
+import { createActivityView } from './activityView';
 
 export default {
     title: 'Activity View'
