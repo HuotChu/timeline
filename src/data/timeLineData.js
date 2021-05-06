@@ -160,7 +160,8 @@ let timeLineData = {
             "links": [{
                "href" : "https://www.cricketwireless.com/support/plans-and-features/unlimited-data.html",
                "text" : "Data Plan FAQs >"
-            }]         },
+            }]
+         },
          {
             "type":"memo",
             "seqNo":"2732572141",
@@ -173,26 +174,6 @@ let timeLineData = {
                "href" : "https://www.cricketwireless.com/support/orders-and-activations/phone-setup.html",
                "text" : "Phone Setup >"
             }]
-         },
-         {
-            "type":"memo",
-            "seqNo":"2732570189",
-            "description":"Security Authentication has been bypassed with reason makeAPayment",
-            "date":"2020-05-03",
-            "timestamp":"1620038816000",
-            "attId":"sb181k",
-            "applicationId":"Voyage",
-            "performedBy":"sb181k"
-         },
-         {
-            "type":"memo",
-            "seqNo":"2732547814",
-            "description":"Reset Vms in AT&T  has been committed. Subscriber MDN : 28302034051, device code: N/A.",
-            "date":"2020-05-03",
-            "timestamp":"1620037851000",
-            "attId":"sb181k",
-            "applicationId":"Voyage",
-            "performedBy":"sb181k"
          }
       ],
       "orders":[

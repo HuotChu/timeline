@@ -1,7 +1,7 @@
 import './date.css';
 
 const formatDate = (date) => {
-  const dateArray = date ? date.split('-') : [];
+  const dateArray = date && date.split ? date.split('-') : [];
   if (dateArray.length === 3) {
       dateArray[0] = dateArray[0].slice(-2);
       dateArray.push(dateArray.splice(1,1)[0]);

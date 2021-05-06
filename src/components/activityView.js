@@ -44,5 +44,5 @@ export const createActivityView = ({ activityData, index = 0 }) => {
         }
     });
 
-    return view;
+    return container;
 };
