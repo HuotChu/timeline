@@ -29,5 +29,7 @@
     "@storybook/html": "^6.2.9",
     "babel-loader": "^8.2.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@bugsnag/js": "^7.9.2"
+  }
 }
