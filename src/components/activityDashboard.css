@@ -1,3 +1,28 @@
+
+@font-face {
+  font-family: Simply Cricket Bold;
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Bold.eot'); /* IE9 Compat Modes */
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Bold.woff') format('woff'), /* Modern Browsers */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Bold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Bold.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Simply Cricket Book;
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Book.eot'); /* IE9 Compat Modes */
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Book.woff') format('woff'), /* Modern Browsers */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Book.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Book.svg') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: Simply Cricket Demi;
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Demibold.eot'); /* IE9 Compat Modes */
+  src: url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Demibold.woff') format('woff'), /* Modern Browsers */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Demibold.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('https://www.cricketwireless.com/uiassets/fonts/SimplyCricket-Demibold.svg') format('svg'); /* Legacy iOS */
+}
+
 .storybook-activity-dashboard {
   background-color: #F6F6F6;
   width: 290px;
