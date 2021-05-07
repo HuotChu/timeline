@@ -1,5 +1,4 @@
 import { createActivityDashboard } from './ActivityDashboard';
-import { getTimeLineData } from '../data/timeLineData';
 
 export default {
     title: 'Composite/ActivityDashboard',

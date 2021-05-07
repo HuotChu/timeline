@@ -19,7 +19,8 @@ TABLE {
 
 .activity-summary {
     display: inline-block;
-    width: 140px;
+    min-width: 140px;
+    width: calc(100% - 110px);
 }
 
 .device {
