@@ -22,10 +22,14 @@ export const createEventDetails = ({ details }) => {
       }]
     };
   }
+  const wrapper = document.createElement('div');
+  const line = document.createElement('div');
   const container = document.createElement('div');
   const title = document.createElement('h3');
   const description = document.createElement('p');
   const links = details.links || [];
+  line.className = 'hr';
+  wrapper.appendChild(line);
   title.innerText = details.type === 'memo' ? `Call Care ${details.shortDescription}` : details.shortDescription;
   description.innerText = details.description;
   container.appendChild(title).appendChild(description);
@@ -36,6 +40,7 @@ export const createEventDetails = ({ details }) => {
       link.innerText = a.text;
       container.appendChild(link);
   });
+  wrapper.appendChild(container);
 
-  return container;
+  return wrapper;
 };

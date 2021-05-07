@@ -7,13 +7,10 @@ export const createButton = ({ elementId }) => {
         state: 'collapsed'
     };
     btn.className = 'button-toggle-ui expand-button';
-    btn.addEventListener('click', () => {
-        detail.state = detail.state === 'collapsed' ? 'expanded' : 'collapsed';
-        const elementEvent = new CustomEvent('expandBtnClicked', { detail });
-        btn.classList.toggle('expanded');
-        if ( elementEvent ) {
-            btn.dispatchEvent(elementEvent);
-        }
+    btn.addEventListener('click', function () {
+        this.classList.toggle('expanded');
+        detail.state = this.classList.contains('expanded') ? 'expanded' : 'collapsed';
+        document.dispatchEvent(new CustomEvent('expandBtnClicked', { bubbles: true, detail }));
     });
 
     return btn;

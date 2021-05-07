@@ -48,3 +48,8 @@ TABLE {
     width: 270px;
     height: 50px;
 }
+
+.section-bottom {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+}

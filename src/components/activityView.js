@@ -1,7 +1,7 @@
 import './activityView.css';
 import { createDateEle } from './date';
 import { createEventDetails } from './EventDetails';
-import { createButton } from './ExpandButton';
+import { createButton, toggleButton } from './ExpandButton';
 import { createText } from './Text';
 
 export const createActivityView = ({ activityData, index = 0 }) => {
@@ -33,17 +33,22 @@ export const createActivityView = ({ activityData, index = 0 }) => {
     container.querySelector('.activity-title').appendChild(title);
     container.querySelector('.activity-sub-title').appendChild(subtitle);
     container.querySelector('.section-top').appendChild(expandButton);
-    container.querySelector('.section-bottom').appendChild(eventDetails);
 
-    container.addEventListener('expandBtnClicked', (e) => {
+    const bottom = container.querySelector('.section-bottom');
+    bottom.appendChild(eventDetails);
+
+    document.addEventListener('expandBtnClicked', function (e) {
         const { id, state } = e.detail;
+        const classes = bottom.classList;
         if (id === buttonId) {
-            const classes = document.querySelector(`#${buttonId}`).classList;
             if (state === 'collapsed') {
                 classes.add('hide');
             } else {
                 classes.remove('hide');
             }
+        } else if (state === 'expanded' && !classes.contains('hide')) {
+            expandButton.classList.remove('expanded');
+            classes.add('hide');
         }
     });
 

@@ -117,7 +117,7 @@ const timeLineData = {
       {
          "type":"device",
          "seqNo":"2735193147",
-         "description":"Upgraded Device: (555) 555-5555. You Upgraded your device to iPhone SE. To get the most out of youor device:",
+         "description":"Upgraded Device: (555) 555-5555. You Upgraded your device to iPhone SE. To get the most out of your device:",
          "date":"2021-03-05",
          "timestamp":"1620215662000",
          "attId":"sb181k",
@@ -135,7 +135,7 @@ const timeLineData = {
       {
          "type":"store",
          "seqNo":"2735186895",
-         "description":"Upgraded Device: (555) 555-5555. You reset your PIN. Thanks for keeping your account secure! To learn morre aboout security:",
+         "description":"Upgraded Device: (555) 555-5555. You reset your PIN. Thanks for keeping your account secure! To learn more about security:",
          "date":"2021-04-02",
          "timestamp":"1620215237000",
          "attId":"sb181k",
@@ -150,7 +150,7 @@ const timeLineData = {
       {
          "type":"online",
          "seqNo":"2732582997",
-         "description":"Plan Change: (444) 444-5555. Thank you for changing youor plan to Unlimited! If you have questions, check out our FAQs:",
+         "description":"Plan Change: (444) 444-5555. Thank you for changing your plan to Unlimited! If you have questions, check out our FAQs:",
          "date":"2021-04-22",
          "timestamp":"1620039371000",
          "attId":"sb181k",
@@ -164,7 +164,7 @@ const timeLineData = {
       {
          "type":"chat",
          "seqNo":"2732572141",
-         "description":"Activated Device (555) 555-5555. Thanks for activating your service! Now that yuo've activated, here are some helpful tips t oget yuo started:",
+         "description":"Activated Device (555) 555-5555. Thanks for activating your service! Now that you've activated, here are some helpful tips to get you started:",
          "date":"2021-05-05",
          "timestamp":"1620038901000",
          "attId":"sb181k",
