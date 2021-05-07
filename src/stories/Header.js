@@ -1,6 +1,5 @@
 import './header.css';
 import { createButton } from './Button';
-import {timeLineData } from '../data/timeLineData'
 
 export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
   const header = document.createElement('header');
@@ -26,7 +25,7 @@ export const createHeader = ({ user, onLogout, onLogin, onCreateAccount }) => {
   wrapper.insertAdjacentHTML('afterbegin', logo);
 
   const account = document.createElement('div');
-  const events = timeLineData.account?.events;
+
   if (user) {
     account.appendChild(createButton({ size: 'small', label: 'Log out', onClick: onLogout }));
   } else {

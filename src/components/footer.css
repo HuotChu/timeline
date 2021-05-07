@@ -4,6 +4,8 @@
   font-family: 'Simply Cricket Demi', Arial, sans-serif;
   font-weight: 100;
   cursor: pointer;
+  text-align: center;
+  width: 100%;
 }
 
 .timeline-footer:after {
