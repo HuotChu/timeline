@@ -1,18 +1,11 @@
 import './header.css';
 
 export const createHeader = ({ headerText }) => {
-  const header = document.createElement('header');
-
   const wrapper = document.createElement('div');
-  wrapper.className = 'wrapper';
-  const headerDiv = document.createElement('div');
   const headerEle = document.createElement('h1');
-
+  wrapper.className = 'wrapper';
   headerEle.innerText = headerText;
-
-  headerDiv.appendChild(headerEle);
-  wrapper.appendChild(headerDiv);
-  header.appendChild(wrapper);
+  wrapper.appendChild(headerEle);
   
-  return header;
+  return wrapper;
 };
