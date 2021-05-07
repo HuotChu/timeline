@@ -1,23 +1,22 @@
-.expand-button {
-  display: inline-block;
-  background: #fff url(./assets/chevron-down-icon.png) center center/contain no-repeat;
-  width: 25px;
-  height: 15px;
-  cursor: pointer;
-  margin-top: 3px;
-}
 .button-toggle-ui {
+  background-color: #FFF;
+  border: none;
   transition: height 200ms;
-  width: auto;
-  background: none;
-  padding: 0;
-  margin: 0 10px 0 0;
-  border: 0;
-  z-index: 50;
-  position: absolute;
-  top: 26px;
-  right: 10px;
+  cursor: pointer;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  padding: 12px 8px;
 }
+
+.expand-button {
+  background: url(./assets/chevron-down-icon.png);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
+  display: inline-block;
+}
+
 .button-toggle-ui.expanded {
   transform: rotateX(180deg);
 }

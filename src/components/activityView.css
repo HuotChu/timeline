@@ -1,3 +1,50 @@
+TABLE {
+    padding: 8px 0;
+}
+
 .hide {
     display: none;
+}
+
+.activity-container {
+    padding: 5px 10px;
+}
+
+.activity-icon {
+    width: 30px;
+    height: 30px;
+    padding: 8px 12px 12px 8px;
+    display: inline-block;
+}
+
+.activity-summary {
+    display: inline-block;
+    width: 140px;
+}
+
+.device {
+    background: url('./assets/mini-device-icon.png') no-repeat center;
+    background-size: 30px;
+}
+
+.store {
+    background: url('./assets/mini-store-icon.png') no-repeat center;
+    background-size: 24px;
+}
+
+.online {
+    background: url('./assets/mini-web-icon.png') no-repeat center;
+    background-size: 30px;
+}
+
+.chat {
+    background: url('./assets/mini-chat-icon.png') no-repeat center;
+    background-size: 30px;
+}
+
+.section-top {
+    background-color: #FFFFFF;
+    border-radius: 6px;
+    width: 270px;
+    height: 50px;
 }

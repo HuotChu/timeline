@@ -8,7 +8,7 @@ const timeLineData = {
       "statusActvCode":"RSP",
       "statusActvRsnCode":"FPP",
       "statusDate":"2021-04-20",
-      "customerSince":"2021-04-18",
+      "customerSince":"2020-04-18",
       "billCycle":20,
       "billCycleDate":"2021-05-20",
       "billDueDate":"2021-05-19",
@@ -115,7 +115,7 @@ const timeLineData = {
    ],
    "events":[
       {
-         "type":"transaction",
+         "type":"device",
          "seqNo":"2735193147",
          "description":"Upgraded Device: (555) 555-5555. You Upgraded your device to iPhone SE. To get the most out of youor device:",
          "date":"2021-03-05",
@@ -133,7 +133,7 @@ const timeLineData = {
          }]
       },
       {
-         "type":"memo",
+         "type":"store",
          "seqNo":"2735186895",
          "description":"Upgraded Device: (555) 555-5555. You reset your PIN. Thanks for keeping your account secure! To learn morre aboout security:",
          "date":"2021-04-02",
@@ -148,10 +148,10 @@ const timeLineData = {
          }]
       },
       {
-         "type":"transaction",
+         "type":"online",
          "seqNo":"2732582997",
          "description":"Plan Change: (444) 444-5555. Thank you for changing youor plan to Unlimited! If you have questions, check out our FAQs:",
-         "date":"2021-02-22",
+         "date":"2021-04-22",
          "timestamp":"1620039371000",
          "attId":"sb181k",
          "applicationId":"Online",
@@ -162,12 +162,13 @@ const timeLineData = {
          }]
       },
       {
-         "type":"memo",
+         "type":"chat",
          "seqNo":"2732572141",
          "description":"Activated Device (555) 555-5555. Thanks for activating your service! Now that yuo've activated, here are some helpful tips t oget yuo started:",
-         "date":"2020-12-25",
+         "date":"2021-05-05",
          "timestamp":"1620038901000",
          "attId":"sb181k",
+         "applicationId":"Support",
          "shortDescription": "Activation",
          "links": [{
             "href" : "https://www.cricketwireless.com/support/orders-and-activations/phone-setup.html",
@@ -272,14 +273,15 @@ export const getTimeLineData = () => {
 
    if (accountDetails.customerSince) {
       data.events.push({
-         "type": "transaction",
+         "type": "store",
          "description": "Customer Account Creation",
          "date": accountDetails.customerSince,
          "performedBy": `${(timeLineData.name || {}).firstName} ${(timeLineData.name || {}).lastName}`,
+         "applicationId":"Retail",
          "shortDescription": "Account Creation",
          "links": [{
-            "href" : "www.cricketwireless.com/myaccount.html",
-            "text" : "Visit My Account"
+            "href": "www.cricketwireless.com/myaccount.html",
+            "text": "Visit My Account"
          }]
       });
    }

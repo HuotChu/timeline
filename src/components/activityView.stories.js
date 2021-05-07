@@ -20,7 +20,7 @@ Device.args = {
             text: "Get accessories for your device >"
          }],
         shortDescription: "Device Upgrade",
-        type: "transaction"
+        type: "device"
     }
 };
 
@@ -35,7 +35,7 @@ Store.args = {
             text: "Account Pin Security >"
          }],
         shortDescription: "PIN Reset",
-        type: "memo"
+        type: "store"
     }
 };
 
@@ -50,13 +50,14 @@ Online.args = {
             text: "Data Plan FAQs >"
          }],
         shortDescription: "Plan Change",
-        type: "transaction"
+        type: "online"
     }
 };
 
 export const Chat = Template.bind({});
 Chat.args = {
     activityData: {
+        applicationId: "Support",
         date: "2020-12-25",
         description: "Activated Device (555) 555-5555. Thanks for activating your service! Now that yuo've activated, here are some helpful tips t oget yuo started:",
         links: [{
@@ -64,6 +65,6 @@ Chat.args = {
             text: "Phone Setup >"
          }],
         shortDescription: "Activation",
-        type: "memo"
+        type: "chat"
     }
 };
