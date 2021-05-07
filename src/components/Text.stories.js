@@ -1,7 +1,7 @@
 import {createText} from './Text';
 
 export default {
-    title: 'Example/MainText',
+    title: 'Format/MainText',
     argTypes: {
       text : {control : 'text'},
       primary : {control : 'boolean'}
@@ -19,9 +19,3 @@ MainText.args = {
   text: 'Customer Care',
   primary: true
 };
-
-
-
-
-
-

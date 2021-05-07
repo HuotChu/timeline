@@ -1,7 +1,7 @@
 import {createWelcomeText} from './Welcome';
 
 export default {
-title: 'Example/Welcome',
+title: 'Content/Welcome',
 argTypes:{
         boldText: {control : 'text'},
         date : {control : 'text'},

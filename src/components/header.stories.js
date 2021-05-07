@@ -1,7 +1,7 @@
 import { createHeader } from './header';
 
 export default {
-  title: 'Example/header',
+  title: 'Content/header',
   argTypes: {
     headerText: { control: 'text' }
   }

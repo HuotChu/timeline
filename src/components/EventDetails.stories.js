@@ -1,7 +1,7 @@
 import { createEventDetails } from './EventDetails';
 
 export default {
-  title: 'Example/EventDetails',
+  title: 'Content/EventDetails',
   argTypes: {
     "type":"memo",
       "seqNo":"2735269226",
@@ -40,5 +40,3 @@ Primary.args = {
     "text" : 'Shop Phones'
   }]
 };
-
-

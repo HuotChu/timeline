@@ -1,7 +1,7 @@
 import { createFooter } from './footer';
 
 export default {
-  title: 'Example/Footer',
+  title: 'Content/Footer',
   argTypes: {
     footerText: { control: 'text' }
   }

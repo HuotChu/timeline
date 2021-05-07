@@ -1,7 +1,7 @@
 import { createButton } from './ExpandButton';
 
 export default {
-  title: 'Example/ExpandButton',
+  title: 'Control/ExpandButton',
   argTypes: {
     elementId: 'id'
   },

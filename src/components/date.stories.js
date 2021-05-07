@@ -1,7 +1,7 @@
 import { createDateEle } from './date';
 
 export default {
-  title: 'Example/DateEle',
+  title: 'Format/DateEle',
   argTypes: {
     date: { control: 'text' }
   }
